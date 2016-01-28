@@ -1,0 +1,18 @@
+Create a new username and password for postgresql on cloud9:
+
+ sudo service postgresql start
+sudo sudo -u postgres psql
+CREATE USER revjatto SUPERUSER PASSWORD 'c6h120h';
+postgres=# \q
+Create ENV variables on cloud9:
+
+echo "export USERNAME=username" >> ~/.profile
+echo "export PASSWORD=password" >> ~/.profile
+source ~/.profile
+
+create your database:
+
+rake db:create
+My database.yml for rails 4.2.0 on cloud9:
+
+<%= ENV['IP'] %>
